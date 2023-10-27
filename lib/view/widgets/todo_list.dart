@@ -17,13 +17,13 @@ class _ToDoListState extends State<ToDoList> {
   Widget build(BuildContext context) {
     
     dynamic width = MediaQuery.of(context).size.width;
-    return Container(
+    return SizedBox(
       height: 130,
       width: double.maxFinite,
       child: Padding(
         padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
         child: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           height: 100,
           width: width * 0.85,
           decoration: BoxDecoration(
