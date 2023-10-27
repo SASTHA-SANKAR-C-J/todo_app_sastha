@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:todo_app_sastha/controller/to_list_screen_controller.dart';
 import 'package:todo_app_sastha/model/notes_model.dart';
 import '../widgets/todo_list.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -28,7 +27,6 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController _descriptioncontroller = TextEditingController();
   TextEditingController _datecontroller = TextEditingController();
   ListController dataController = ListController();
-  var myDb = Hive.box("mydata");
 
   @override
   Widget build(BuildContext context) {

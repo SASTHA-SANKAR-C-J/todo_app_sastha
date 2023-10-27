@@ -13,7 +13,7 @@ final myBox = Hive.box('mydata');
     datalist.removeAt(index);
     updateDataBase();
   }
-
+  
   loadDataBase() async {
     datalist= await myBox.get('noteDataList');
   }
